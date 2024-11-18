@@ -4,13 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-//redux추가
-import {legacy_createStore as createStore} from 'redux';
-import {Provider} from 'react-redux';
-import {devToolsEnhancer} from '@redux-devtools/extension';
+// redux 추가
+import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { devToolsEnhancer } from '@redux-devtools/extension';
 import rootReducer from './modules';
-const store=createStore(rootReducer,devToolsEnhancer());
+const store = createStore(rootReducer, devToolsEnhancer())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,12 +1,11 @@
-import {createAction,handleActions} from 'redux-actions'
+import { createAction, handleActions } from 'redux-actions';
 
-const todoInitValue={
-
+const todoInitialValue = {
 
 }
 
-const todo=handleActions({
+const todo = handleActions({
 
-},todoInitValue)
+}, todoInitialValue)
 
-export default todo
+export default todo;
