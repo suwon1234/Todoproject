@@ -19,6 +19,7 @@ S.Title=styled.p`
   font-size: 16px;
   font-weight: 400;
 
+
 `
 
 S.SubTitle=styled.p`
