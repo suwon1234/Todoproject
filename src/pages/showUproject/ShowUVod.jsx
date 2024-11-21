@@ -11,7 +11,7 @@ const ShowUVod=()=>{
   <S.topbar className="topbar"></S.topbar>
   <S.navbar className="navbar">
     <S.logo className="logo">
-      <Link to="/" className="logolink">
+      <Link to="/showU" className="logolink">
         Show <span className="highlight">U</span>
       </Link>
     </S.logo>
@@ -34,32 +34,32 @@ const ShowUVod=()=>{
     </S.authlinks>
   </S.navbar>
   <S.menubar className="menubar">
-    <NavLink to="/" className="menuitem">
+    <NavLink to={"/"} className="menuitem">
       showU
     </NavLink>
-    <NavLink to="/shop" className="menuitem">
+    <NavLink to={"/shop"} className="menuitem">
       Shop
     </NavLink>
-    <NavLink to="/vod" className="menuitem">
+    <NavLink to={"/vod"} className="menuitem">
       VOD
     </NavLink>
-    <NavLink to="/reservation" className="menuitem">
+    <NavLink to={"/reservation"} className="menuitem">
       예약
     </NavLink>
     <span className="menudivider">|</span>
-    <NavLink to="/hot" className="menuitemhot">
+    <NavLink to={"/hot"} className="menuitemhot">
       HOT
     </NavLink>
-    <NavLink to="/community" className="menuitem">
+    <NavLink to={"/community"} className="menuitem">
       커뮤니티
     </NavLink>
-    <NavLink to="/mypage" className="menuitem">
+    <NavLink to={"/mypage"} className="menuitem">
       마이페이지
     </NavLink>
   </S.menubar>
 </header>
 <S.main className='main'>
-<Outlet/>
+  <Outlet/>
 </S.main>
 
 

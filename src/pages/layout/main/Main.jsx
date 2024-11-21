@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import S from '../main/style';
+import BasicButton from '../../../components/button/BasicButton';
 
 const Main = () => {
   return (
-    <div className='wrapper'>
-      <div className='imageWrapper'>
+    <S.wrapper className='wrapper'>
+      <S.imageWrapper className='imageWrapper'>
         <img src={process.env.PUBLIC_URL + "/images/main/animal.png"}/>
-      </div>
-      <div className='buttonWrapper'>
+      </S.imageWrapper>
+      <S.buttonWrapper className='buttonWrapper'>
         <Link to={"/signIn"}>
-        <button>로그인</button>
+        <BasicButton size={"full"} shape={"small"} variant={"black"} color={"white"}>로그인</BasicButton>
           </Link>
         <Link to={"/signUp"}>
-        <button>회원가입</button>
+        <BasicButton size={"full"} shape={"small"} variant={"black"} color={"white"}>회원가입</BasicButton>
           </Link>
-      </div>
-    </div>
+      </S.buttonWrapper>
+    </S.wrapper>
   );
 };
 

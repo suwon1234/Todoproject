@@ -88,10 +88,15 @@ S.menubar=styled.div`
   text-decoration: none;
   color: white;
   font-size: 18px;
-  & .active{
-    color: #FDDE39 !important;
-    border-bottom: 2px solid #FDDE39;
-  }
+  & .active {
+      & p {
+        color : #917cf0 !important;
+      }
+
+      & path {
+        color : #917cf0 !important;
+      }
+    }
   }
   & .menuitemhot{
     color: red;
