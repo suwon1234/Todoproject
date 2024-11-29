@@ -6,6 +6,7 @@ import ShowUVod from '../pages/showUproject/ShowUVod';
 import VodContainer from '../pages/showUproject/VOD/VodContainer';
 import MainPage from '../pages/showUproject/main/MainPage'
 import SignUp from '../pages/signUp/SignUp';
+import SignIn from '../pages/SignIn/SignIn';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children : [
       {
         index : true,
-        element : <Main />
+        element : <Main/>
       },
       {
         path : '/todo',
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
       {
         path : '/signUp',
         element : <SignUp/>
-      }
+      },
+      {
+        path : '/signIn',
+        element : <SignIn />
+      },
     ]
   }
 ],

@@ -14,7 +14,6 @@ const Todo = ({todo, isTodoUpdate, handleIsTodoUpdate}) => {
   }
 
   // 체크 상태 변경
-  // 15분
   const handleChecked = async () => { 
     // setIsTodoChecked(!isTodoChecked)
     await fetch(`http://localhost:4000/todo/${id}`, {

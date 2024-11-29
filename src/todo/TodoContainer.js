@@ -3,8 +3,6 @@ import Todo from './Todo';
 import TodoInsert from './TodoInsert';
 
 const TodoContainer = () => {
-
-  // 7분
   // http://localhost:4000/todo로 투두를 요청하여 console.log에 출력하기
   // 단 useState로 데이터를 넣고, 넣은 데이터를 출력한다.
   // 모든 비동기 요청은 사이드이팩트가 발생할 수 있다.

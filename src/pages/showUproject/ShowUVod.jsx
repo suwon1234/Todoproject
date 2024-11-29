@@ -34,7 +34,7 @@ const ShowUVod=()=>{
     </S.authlinks>
   </S.navbar>
   <S.menubar className="menubar">
-    <NavLink to={"/"} className="menuitem">
+    <NavLink to={"/showU"} className="menuitem">
       showU
     </NavLink>
     <NavLink to={"/shop"} className="menuitem">
